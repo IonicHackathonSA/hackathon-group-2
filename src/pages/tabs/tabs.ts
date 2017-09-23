@@ -11,9 +11,9 @@ import { AdminPage } from '../admin/admin';
 export class TabsPage {
 
   tab1Root = HomePage;
-  tab2Root = AboutPage;
-  tab3Root = VolunteerPage;
-  tab4Root = AdminPage;
+  tab2Root = VolunteerPage;
+  tab3Root = AdminPage;
+  tab4Root = AboutPage;
 
   constructor() {
 
