@@ -11,6 +11,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { VolunteerPage } from '../pages/volunteer/volunteer';
 import { AdminPage } from '../pages/admin/admin';
+import { Charity, CharityInfo, CharityContact} from '../pages/home/charity.models';
 
 @NgModule({
   declarations: [
@@ -33,10 +34,14 @@ import { AdminPage } from '../pages/admin/admin';
     HomePage,
     TabsPage,
     AdminPage
+    
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    Charity,
+    CharityInfo,
+    CharityContact,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
